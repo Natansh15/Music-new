@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+}
+.dark-mode {
+    background: #121212;
+    color: #fff;
+}
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+button {
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+.lyrics {
+    margin-top: 20px;
+    font-size: 1.2em;
+    white-space: pre-line;
+}
