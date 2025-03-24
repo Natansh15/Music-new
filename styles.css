@@ -1,24 +1,59 @@
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
-    transition: background 0.3s, color 0.3s;
-}
-.dark-mode {
-    background: #121212;
+    background-color: #5d588da2;
     color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
+
 .container {
-    max-width: 600px;
+    max-width: 800px;
     margin: auto;
     padding: 20px;
 }
-button {
-    padding: 10px;
-    margin: 10px;
-    cursor: pointer;
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
+
+.playlist {
+    width: 40%;
+    background: #4b4949;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.playlist ul {
+    list-style: none;
+    padding: 0;
+}
+
+.playlist li {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #7a7878;
+}
+
+.playlist li:hover {
+    background: #6b6b6b;
+}
+
+.player-lyrics {
+    width: 55%;
+    background: #bebebe;
+    padding: 20px;
+    border-radius: 10px;
+}
+
 .lyrics {
     margin-top: 20px;
-    font-size: 1.2em;
+    text-align: center;
+    font-size: 24px; /* Aumenta el tamaño de la letra */
+    font-weight: bold; /* Hace que la letra sea más visible */
+    line-height: 1.6; /* Mejora el espaciado entre líneas */
     white-space: pre-line;
+    color: #4a4f81; /* Hace que resalte con un color llamativo */
 }

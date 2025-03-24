@@ -9,14 +9,28 @@
 </head>
 <body>
     <div class="container">
-        <h1>🎤 Nt Music 🎶</h1>
-        <button onclick="toggleDarkMode()">🌙 Modo Oscuro</button>
-        <button onclick="showNotification()">🔔 Notificación</button>
-        <audio id="audio" controls>
-            <source src="./Music/Wasteland (from the series Arcane League of Legends).mp3" type="audio/mpeg">
-            Tu navegador no soporta audio.
-        </audio>
-        <div class="lyrics" id="lyrics">🎵 Letra aquí... 🎵</div>
+        <h1>NISH Music</h1>
+        <div class="main-content">
+            <div class="playlist">
+                <h2>Lista de Canciones</h2>
+                <ul id="songList">
+                    <li onclick="selectSong('Ma Meilleure Ennemie (from the series Arcane League of Legends).mp3')">Ma Meilleure Ennemie</li>
+                    <li onclick="selectSong('Wasteland (from the series Arcane League of Legends).mp3')">Wasteland</li>
+                    <li onclick="selectSong('Die With A Smile.mp3')">Die With A Smile</li>
+                    <li onclick="selectSong('Sirens.mp3')">Sirens</li>
+                    <li onclick="selectSong('Tragos Amargos.mp3')">Tragos Amargos</li>
+                </ul>
+            </div>
+            <div class="player-lyrics">
+                <div class="player">
+                    <audio id="audio" controls>
+                        <source id="audioSource" src="" type="audio/mpeg">
+                        Tu navegador no soporta audio.
+                    </audio>
+                </div>
+                <div class="lyrics" id="lyrics">🎵 Selecciona una canción para ver la letra 🎵</div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
